@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "739ae132-8110-4b40-b940-1d49d8667daf",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54798430",
+    "_collection_link": "https://go.postman.co/collection/54798430-739ae132-8110-4b40-b940-1d49d8667daf?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get all product",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get single product",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/products/6a06c3dde2c2fb7314416d30",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "products",
+            "6a06c3dde2c2fb7314416d30"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "post request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Wireless Mouse\",\r\n  \"description\": \"A high-quality wireless mouse with ergonomic design\",\r\n  \"price\": 29.99,\r\n  \"category\": \"Electronics\",\r\n  \"inStock\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put request",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Wireless Mouse Pro\",\r\n  \"description\": \"Updated version with better battery\",\r\n  \"price\": 39.99,\r\n  \"category\": \"Electronics\",\r\n  \"inStock\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/6a06c3dde2c2fb7314416d30",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "products",
+            "6a06c3dde2c2fb7314416d30"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete request",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Wireless Mouse Pro\",\r\n  \"description\": \"Updated version with better battery\",\r\n  \"price\": 39.99,\r\n  \"category\": \"Electronics\",\r\n  \"inStock\": true\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/6a06c3dde2c2fb7314416d30",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "products",
+            "6a06c3dde2c2fb7314416d30"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
